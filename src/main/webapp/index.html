@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AEX stock ticker</title>
+        <!-- Latest compiled and minified bootstrap CSS -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">        
+        <link type="text/css" rel="stylesheet" href="css/styles.css"/>
+        <script type="text/javascript"  src="http://code.jquery.com/jquery-1.11.1.js"></script>
+        <script type="text/javascript"  src="js/ticker.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body class="center" onload="init()">
+        <h1>StockTicker REST demo</h1>
+        <p>
+            The table below displays fictitious prices of stocks listed on the AEX at the time of writing.           
+            All stocks are trademarks of their respective owners. 
+        </p>
+        <p>
+            The table is updated by push messages through the javascript
+            <a href="js/ticker.js">ticker.js</a> which in turn uses <a href="http://www.jquery.com">JQuery</a>. For a list of supported
+            browsers see the <a href="http://jquery.com/browser-support">JQuery 1.x supported browsers</a>.
+        </p>
+        <table id="t" border="1" class="center,table">
+            <tr id="trh">
+                <th class="column0">Stock</th>
+                <th class="column1">Price</th> 
+            </tr>
+        </table>
+        <footer>
+            <small>&copy;2014 <a href="mailto:jurjenvangeenen@yahoo.com">Jurjen van Geenen</a>, all rights reserved.</small>
+        </footer>    
+    </body>
+</html>
